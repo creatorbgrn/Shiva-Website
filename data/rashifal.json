@@ -1,0 +1,137 @@
+{
+  "source": {
+    "name": "Bishwaguru Nepal",
+    "url": "https://www.bishwagurunepal.com/",
+    "reference_np": "स्रोत: Bishwaguru Nepal",
+    "reference_en": "Source: Bishwaguru Nepal",
+    "translation_note_np": "अंग्रेजी सामग्री सुविधा लागि देखाइएको अनुवाद हो।",
+    "translation_note_en": "English text is shown as a convenience translation of the sourced Nepali rashifal."
+  },
+  "title_np": "आजको राशिफल",
+  "title_en": "Today's Rashifal",
+  "date_np": "आजमिति 2082 साल चैत 23 गते सोमबार (तदनुसार 6 April 2026)",
+  "date_en": "6 April 2026",
+  "updated_at": "2026-04-06T07:16:08.513906+00:00",
+  "signs": [
+    {
+      "slug": "aries",
+      "sign_np": "मेष",
+      "sign_en": "Aries",
+      "symbol": "♈",
+      "letters_np": "(चु, चे, चो, ला, लि, लु, ले, लो, आ)",
+      "content_np": "व्यापार ब्यावसायबाट प्रसस्त आर्थिक लाभ प्राप्त हुनाले आर्थिक स्तरमा अपेक्षाकृत सुधार देखिने छ । जिवनसाथी अथवा प्रेमि- प्रेमिकाको यथोचित सहयोगले मन प्रसन्न रहने छ तथा आँटेका कामहरुमा सहजताको महसुस हुने छ । खानपान तथा भोज भत्तेरमा ज्यादा समय खर्च हुने देखिन्छ । मनोबल उच्च रहनाले जस्तोसुकै कार्यमा पनि सफलता पाउने योग परेको छ भने शत्रुभय पनि देखिएको छ ।",
+      "color": "rgb(248, 155, 141)",
+      "content_en": "Due to getting a lot of financial benefits from the business, there will be a relative improvement in the economic level. With the reasonable support of your spouse or lover, your heart will be happy and you will feel ease in your difficult tasks. It seems that more time is spent on catering and catering. If morale is high, success is achieved in any task, while fear of enemies is also seen."
+    },
+    {
+      "slug": "taurus",
+      "sign_np": "वृष",
+      "sign_en": "Taurus",
+      "symbol": "♉",
+      "letters_np": "(ई, उ, ए, ओ, वा, वि, वु, वे, वो)",
+      "content_np": "धार्मिक ब्यक्तिहरु सँग भेटघाट,भलाकुसारी हुने साथै अतिथीको रुपमा स्वागत गर्न पाँउदा मन प्रफुल्लित रहने छ । अध्यात्मिक जागरणको दिन परेको छ । भाग्य अनुकूल रहनाले गरिरहेका कार्यमा स्तरोन्नति हुने तथा नभएका तथा अड्किएर रहेका कार्यहरु पनि सम्पन्न हुने दिन परेको छ । जप, तप, साधना तथा सिद्धि जस्ता कुराहरुमा वृद्धि हुने छ । प्रेम तथा विपरीत लिङ्गिको सहयोगमा वृद्धि हुनेछ । व्यापार ब्यावसायबाट अपेक्षित मुनाफा आर्जन हुने देखिन्छ भने शैक्षिक क्षेत्रमा उच्च सफलताको योग परेको छ ।",
+      "color": "rgb(243, 240, 228)",
+      "content_en": "Meeting with religious persons, being well received and being welcomed as a guest will make the heart happy. The day of spiritual awakening has come. Due to the good luck, the work that is being done will be upgraded and the work that is not done and stuck will also be completed. There will be an increase in things like Japa, Tapa, Sadhana and Siddhi. There will be an increase in love and support from the opposite sex. It seems that the expected profit will be earned from the business, while there is a high success rate in the educational sector."
+    },
+    {
+      "slug": "gemini",
+      "sign_np": "मिथुन",
+      "sign_en": "Gemini",
+      "symbol": "♊",
+      "letters_np": "(क, कि, कु, घ, ङ, छ, के, को, हा)",
+      "content_np": "अनावश्यक धन खर्च हुनेछ । मनमा अनेक थरी कुराहरु खेलिरहनाले मन दिन भर नै अशान्त रहने छ । चिसो तथा पानीबाट जोगिनुपर्ने छ । आफ्नो काममा मन नलाग्ने तथा मन विचलित हुने देखिन्छ । सर्दी, रुखाखोकी आदिले सताउने देखिन्छ । सकेसम्म आज नयाँ कामहरु सुरु नगर्नु नै उत्तम हुनेछ । यदि सुरु गर्नै परेमा आफ्नो इष्टदेवको स्मरण गरेर मात्र सुरु गर्नु ठीक हुनेछ ।",
+      "color": "rgb(97, 191, 125)",
+      "content_en": "Unnecessary money will be spent. As many things are playing in the mind, the mind will remain restless throughout the day. Avoid cold and water. It seems that he is not interested in his work and his mind is disturbed. Colds, whooping cough etc seem to bother. If possible, it would be best not to start new work today. If you have to start, it will be right to start only by remembering your Ishtadev."
+    },
+    {
+      "slug": "cancer",
+      "sign_np": "कर्क",
+      "sign_en": "Cancer",
+      "symbol": "♋",
+      "letters_np": "(ही, हु, हे, हो, डा, डी, डु, डे, डो)",
+      "content_np": "धार्मिक ब्यक्तिहरु सँग भेटघाट,भलाकुसारी हुने साथै अतिथीको रुपमा स्वागत गर्न पाँउदा मन प्रफुल्लित रहने छ । अध्यात्मिक जागरणको दिन परेको छ । भाग्य अनुकूल रहनाले गरिरहेका कार्यमा स्तरोन्नति हुने तथा नभएका तथा अड्किएर रहेका कार्यहरु पनि सम्पन्न हुने दिन परेको छ । जप, तप, साधना तथा सिद्धि जस्ता कुराहरुमा वृद्धि हुने छ । प्रेम तथा विपरीत लिङ्गिको सहयोगमा वृद्धि हुनेछ । व्यापार ब्यावसायबाट अपेक्षित मुनाफा आर्जन हुने देखिन्छ भने शैक्षिक क्षेत्रमा उच्च सफलताको योग परेको छ ।",
+      "color": "rgb(254, 253, 253)",
+      "content_en": "Meeting with religious persons, being well received and being welcomed as a guest will make the heart happy. The day of spiritual awakening has come. Due to the good luck, the work that is being done will be upgraded and the work that is not done and stuck will also be completed. There will be an increase in things like Japa, Tapa, Sadhana and Siddhi. There will be an increase in love and support from the opposite sex. It seems that the expected profit will be earned from the business, while there is a high success rate in the educational sector."
+    },
+    {
+      "slug": "leo",
+      "sign_np": "सिंह",
+      "sign_en": "Leo",
+      "symbol": "♌",
+      "letters_np": "(मा, मि, मु, मे, मो, टा, टि, टु, टे)",
+      "content_np": "नेतृत्व तह अथवा विशिष्ठ ब्यक्तिहरुबाट विशेष सम्मान प्राप्त हुने छ । अधुरा कार्यहरु पूर्ण हुने छन् भने आँटेका कार्यहरु पनि सफल हुने छन् । सेवारत पदमा पदोन्नति अथवा कार्यमा स्तरोन्नति प्राप्त हुने छ । व्यापार ब्यावसायबाट पनि अपेक्षाकृत सफलता प्राप्त हुने छ । मान्यजन तथा आफन्तजन हरुसँग भेटघाट तथा कुरोकन्थो हुने संभावना रहेको छ । नयाँ कार्य आरम्भ गर्नलाई शुभ समय परेको छ । शिक्षा क्षेत्र सफल रहने छ ।",
+      "color": "rgb(248, 155, 141)",
+      "content_en": "Special respect will be received from the leadership level or special persons. Incomplete tasks will be completed and the planned tasks will also be successful. There will be promotion in the service position or promotion in work. There will be relative success in business. There is a possibility of meeting and quarreling with important people and relatives. It is an auspicious time to start a new work. The education sector will be successful."
+    },
+    {
+      "slug": "virgo",
+      "sign_np": "कन्या",
+      "sign_en": "Virgo",
+      "symbol": "♍",
+      "letters_np": "(टो, पा, पि, पु, ष, ण, ठ, पे, पो)",
+      "content_np": "दाजुभाई तथा कुल-कुटुम्बबाट अपेक्षाकृत सफलता प्राप्त हुने छ । शैक्षिक क्षेत्र उत्तम रहने छ । बिपरीत लिङ्गिको सहयोग तथा प्रेम सम्बन्ध प्रगाढ रहने छ । मन स्थिर रहनाले आँटेका कामहरु सफल हुने छन् साथै काममा दाजुभाईको सहयोग रामबाण सावित हुने देखिन्छ । व्यापार आदिका क्षेत्रबाट राम्रो नतिजा आउन सक्छ । शारीरिक तथा मानशिक रुपमा सशक्तीकरण हुने देखिन्छ ।",
+      "color": "rgb(97, 191, 125)",
+      "content_en": "Relative success will be obtained from brothers and clans. The educational sector will be excellent. The cooperation and love relationship of the opposite sex will remain strong. If the mind remains stable, the endeavors will be successful and it seems that the help of the brothers will prove to be a panacea in the work. Good results can come from the field of business etc. It seems to be physically and mentally empowered."
+    },
+    {
+      "slug": "libra",
+      "sign_np": "तुला",
+      "sign_en": "Libra",
+      "symbol": "♎",
+      "letters_np": "(रा, रि, रु, रे, रो, ता, ति, तु, ते)",
+      "content_np": "समय त्यति अनुकूल छैन, अनावश्यक झैझगडामा समय खर्च देखिन्छ । मनमा अकारण पीर, चिन्ता तथा विचलनको स्थिती नबन्ला भन्न सकिन्न । प्रेम सम्बन्ध त्यति राम्रो देखिँदैन । ब्यर्थमा धनको ब्यय हुने, क्रोध उत्पन्न हुने समय परेको छ । अनावश्यक भ्रमण भइ दैनिक कामकाजमा पनि व्यवधान उत्पन्न हुने र मनमा असन्तोष बढ्ने समय परेको छ । नयाँ काम सुरु गर्न समय त्यती ठीक नभएकाले धैर्यधारण गर्नु नै उचित हुनेछ ।",
+      "color": "rgb(243, 240, 228)",
+      "content_en": "Time is not so favorable, time seems to be spent in unnecessary quarrels. It cannot be said that there will be no causeless pain, anxiety and distraction in the mind. Love relationship is not looking so good. The time has come for money to be spent in vain, anger to arise. The time has come when unnecessary visits will cause disruptions in daily work and dissatisfaction will increase in the heart. Since the time is not so good to start a new job, it is advisable to be patient."
+    },
+    {
+      "slug": "scorpio",
+      "sign_np": "वृश्चिक",
+      "sign_en": "Scorpio",
+      "symbol": "♏",
+      "letters_np": "(तो, ना, नी, नु, ने, नो, या, यि, यु)",
+      "content_np": "विभिन्न कार्यहरु सम्पन्न गर्न धन, बुद्धि तथा शारीरिक शक्ति खर्च हुनेछ । आय क्षेत्र उत्तम देखिन्छ । शारीरिक पीडा कम हुने छ । मन अस्थीर रहने हुनाले कुनै कार्य गर्नु अघि होस पुर्याउनु बुद्धिमानी हुने छ ।",
+      "color": "rgb(248, 155, 141)",
+      "content_en": "Money, intelligence and physical strength will be spent to complete various tasks. The income sector looks good. Physical pain will be reduced. Since the mind remains unstable, it is wise to calm down before taking any action."
+    },
+    {
+      "slug": "sagittarius",
+      "sign_np": "धनु",
+      "sign_en": "Sagittarius",
+      "symbol": "♐",
+      "letters_np": "(ये, यो, भा, भि, भु, ध, फ, ढा, भे)",
+      "content_np": "धन सम्पत्ति प्राप्तहुने योग परेकाले अर्थिक स्तर सुधार हुने छ । मन अस्थिर रहने देखिन्छ । बिपरीत लिङ्गी साथिको सहयोगले कार्य सम्पादनमा सहयोग पुग्ने छ । मन धर्मकर्म प्रती धेरै आकर्षित रहनाले भगवानको कृपाप्रसाद प्राप्त हुनेछ । तपाईंको वाणीको प्रभावले नजिकका इष्टमित्रहरु प्रभावित रहने छन् । मन एकाग्र नभएकाले केही कार्यहरु बिग्रन पनि सक्ने देखिन्छ ।",
+      "color": "rgb(238, 233, 133)",
+      "content_en": "The financial status will improve as there is a fortune to get wealth and property. The mind seems to be unstable. The support of the opposite sex partner will help in the performance of the work. If the mind is very much attracted towards dharmakarma, then God's blessings will be received. Close friends will be affected by the influence of your speech. Because the mind is not concentrated, it seems that some tasks may get worse."
+    },
+    {
+      "slug": "capricorn",
+      "sign_np": "मकर",
+      "sign_en": "Capricorn",
+      "symbol": "♑",
+      "letters_np": "(भो, जा, जि, खी, खु, खे, खो, गा, गि)",
+      "content_np": "रोकिएका कार्यहरु बनिने छन् । मनमा शान्ती रहने छ । पराक्रममा वृद्धि हुने छ । भाइबन्धुहरु सन्तुष्ट रहने छन् भने आँटेका कामहरुमा भाइबन्धुको सहयोग लिनु उचित हुने छ । धार्मिक तथा साहित्यिक क्षेत्रको उन्नती प्रबल रहेको छ । पठपाठन तथा लेखन कार्यमा विशेष रुचि बढ्ने छ ।",
+      "color": "rgb(147, 144, 144)",
+      "content_en": "Stopped tasks will be created. There will be peace in the mind. There will be an increase in strength. If the brothers will be satisfied, it will be appropriate to take the help of the brothers in the tasks. The advancement of religious and literary fields is strong. Special interest in reading and writing will increase."
+    },
+    {
+      "slug": "aquarius",
+      "sign_np": "कुम्भ",
+      "sign_en": "Aquarius",
+      "symbol": "♒",
+      "letters_np": "(गु, गे, गो, सा, सि, सु, से, सो, द)",
+      "content_np": "मानसिक तथा शारीरिक सुख अनुभुती हुने देखिन्छ । विभिन्न परिकारहरुको रसस्वादन गर्ने अवसर जुर्ने छ । अर्थोपार्जनको समय छ । सवारीसाधन, घर जग्गा आदिबाट प्रसस्त शारीरिक तथा आर्थिक लाभ मिल्ने छ । स्वास्थ्यमा केही समस्याहरु देखा पर्ने छन् आफ्नो स्वास्थ्यको राम्रो ख्याल राख्नु पर्ने देखिन्छ । इष्टमित्रहरुको सहयोग तथा आमाको आशीर्वादले कामहरु बन्ने देखिन्छन् ।",
+      "color": "rgb(147, 144, 144)",
+      "content_en": "Mental and physical happiness is felt. There will be opportunities to taste various dishes. It's time to make money. You will get a lot of physical and financial benefits from vehicles, real estate etc. Some health problems will appear, it seems that you should take good care of your health. Works seem to be done with the help of friends and mother's blessings."
+    },
+    {
+      "slug": "pisces",
+      "sign_np": "मीन",
+      "sign_en": "Pisces",
+      "symbol": "♓",
+      "letters_np": "(दि, दु, थ, झ, ञ, दे, दो, चा, चि)",
+      "content_np": "राज्य पक्षबाट हजुरको वौद्धिकता र योग्यताको कदर हुने छ । सन्तान तथा प्रेमी-प्रेमिकाको सहयोगले कार्य सम्पादन सहज हुने आँकलन गर्न सकिन्छ । शैक्षिक क्षेत्र उज्वल रहने छ । प्रेममा सफलता मिल्नाले मन प्रसन्न रहने छ । बहुमुल्य धातु तथा रत्न, आभुषण प्राप्तहुने तथा यिनिहरुको कारोबारबाट आर्थिक स्तर सुधार गर्न सहयोग पुग्ने छ । मनमा शान्ती रहने छ ।",
+      "color": "rgb(238, 233, 133)",
+      "content_en": "The state side will appreciate your intelligence and ability. It can be estimated that the work will be easy with the help of children and lovers. The educational sector will remain bright. Success in love will make the heart happy. Precious metals and gems, ornaments will be received and their business will help to improve the economic level. There will be peace in the mind."
+    }
+  ]
+}

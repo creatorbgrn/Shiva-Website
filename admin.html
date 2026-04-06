@@ -45,6 +45,7 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
 /* ============ ADMIN LAYOUT ============ */
 .admin-wrap{display:flex;min-height:100vh}
 .admin-wrap.hidden{display:none}
+.sidebar-backdrop{display:none}
 
 /* Sidebar */
 .sidebar{width:260px;flex-shrink:0;background:linear-gradient(180deg,rgba(11,14,44,1),rgba(5,6,26,1));border-right:1px solid var(--border);display:flex;flex-direction:column;position:fixed;top:0;left:0;bottom:0;z-index:100;transition:transform .3s}
@@ -234,8 +235,10 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
 
 /* MOBILE */
 @media(max-width:900px){
-  .sidebar{transform:translateX(-260px)}
+  .sidebar{width:min(86vw,320px);transform:translateX(-100%);box-shadow:0 24px 60px rgba(0,0,0,.45)}
   .sidebar.open{transform:translateX(0)}
+  .sidebar-backdrop{display:block;position:fixed;inset:0;z-index:90;background:rgba(5,6,26,.68);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .25s}
+  .sidebar-backdrop.show{opacity:1;pointer-events:auto}
   .main{margin-left:0}
   .stats-grid{grid-template-columns:1fr 1fr}
   .content{padding:18px}
@@ -246,19 +249,31 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
   .donut-wrap{grid-template-columns:1fr}
   .stats-intro{flex-direction:column;align-items:flex-start}
   .stats-filter-bar{align-items:stretch}
+  .chart-grid{grid-template-columns:1fr}
+  .record-header{align-items:flex-start;flex-wrap:wrap}
+  .record-right{width:100%;justify-content:space-between}
+  .line-labels{gap:4px}
 }
 @media(max-width:480px){
   .stats-grid{grid-template-columns:1fr}
   .login-card{padding:34px 24px}
   .record-details{grid-template-columns:1fr}
   .toolbar-group{width:100%}
+  .toolbar,.search-box{width:100%}
+  .search-box{min-width:0}
   .filter-select,.icon-btn{width:100%;justify-content:center}
-  .topbar{padding:12px 14px;gap:10px}
+  .topbar{padding:12px 14px;gap:10px;align-items:flex-start;flex-direction:column}
+  .topbar-left,.topbar-right{width:100%;justify-content:space-between}
   .topbar-title{font-size:.74rem;letter-spacing:1.3px}
   .topbar-right{gap:8px}
   .topbar-user{max-width:110px;font-size:.62rem;letter-spacing:1px}
   .topbar-avatar{width:30px;height:30px;font-size:.74rem}
   .stats-filter-group,.date-input{width:100%}
+  .content{padding:14px}
+  .stat-card,.chart-panel,.overview-panel{padding:16px}
+  .record-header,.record-body{padding-left:14px;padding-right:14px}
+  .modal-actions{flex-direction:column}
+  .modal-cancel,.modal-confirm{width:100%}
 }
 
 /* MODAL (status change confirm) */
@@ -354,6 +369,7 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
       <button class="logout-btn" onclick="doLogout()"><span>🚪</span>Sign Out</button>
     </div>
   </nav>
+  <div class="sidebar-backdrop" id="sidebarBackdrop" onclick="closeSidebarMobile()"></div>
 
   <!-- MAIN -->
   <div class="main" id="mainArea">
@@ -698,13 +714,22 @@ async function verifyAdminAccess(){
 function toggleSidebar(){
   const sb=document.getElementById('sidebar');
   const main=document.getElementById('mainArea');
+  const backdrop=document.getElementById('sidebarBackdrop');
   sidebarOpen=!sidebarOpen;
   if(window.innerWidth<=900){
     sb.classList.toggle('open',sidebarOpen);
+    backdrop.classList.toggle('show',sidebarOpen);
   } else {
     sb.classList.toggle('collapsed',!sidebarOpen);
     main.classList.toggle('expanded',!sidebarOpen);
   }
+}
+
+function closeSidebarMobile(){
+  if(window.innerWidth>900)return;
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebarBackdrop').classList.remove('show');
+  sidebarOpen=false;
 }
 
 function showSection(name){
@@ -725,8 +750,7 @@ function showSection(name){
     renderRecentMessages();
   }
   if(window.innerWidth<=900){
-    document.getElementById('sidebar').classList.remove('open');
-    sidebarOpen=false;
+    closeSidebarMobile();
   }
 }
 
@@ -1862,8 +1886,14 @@ window.addEventListener('DOMContentLoaded',()=>{
     if(e.target===document.getElementById('confirmModal'))closeModal();
     const sb=document.getElementById('sidebar');
     if(window.innerWidth<=900&&sidebarOpen&&!sb.contains(e.target)&&!e.target.closest('.sidebar-toggle')){
-      sb.classList.remove('open');
-      sidebarOpen=false;
+      closeSidebarMobile();
+    }
+  });
+  window.addEventListener('resize',()=>{
+    if(window.innerWidth>900){
+      document.getElementById('sidebarBackdrop').classList.remove('show');
+    } else if(!sidebarOpen){
+      document.getElementById('sidebar').classList.remove('open');
     }
   });
 });

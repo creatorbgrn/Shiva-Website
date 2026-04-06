@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>Shiva Bhandari | Daily Rashifal</title>
 <meta name="description" content="दैनिक राशिफल हेर्नुहोस् — स्रोत सन्दर्भसहित नेपाली तथा English translation मा उपलब्ध।"/>
+<link rel="canonical" href="https://creatorbgrn.github.io/Shiva-Website/rashifal.html"/>
+<meta property="og:type" content="website"/>
+<meta property="og:title" content="Shiva Bhandari | Daily Rashifal"/>
+<meta property="og:description" content="Daily rashifal in Nepali and English with a clear source reference."/>
+<meta property="og:url" content="https://creatorbgrn.github.io/Shiva-Website/rashifal.html"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400;600;700&family=Noto+Serif+Devanagari:wght@300;400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet"/>
@@ -71,6 +76,9 @@ img{max-width:100%;display:block}
 .info-card p{color:var(--text-soft);line-height:1.75}
 .section-tag{display:inline-flex;align-items:center;gap:10px;font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin:52px 0 14px}
 .section-tag::before,.section-tag::after{content:'';display:block;width:28px;height:1px;background:var(--gold)}
+.sign-nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin:0 0 10px}
+.sign-link{display:flex;align-items:center;justify-content:center;padding:12px 10px;border-radius:16px;border:1px solid rgba(201,169,110,.14);background:rgba(255,255,255,.03);color:var(--text-soft);font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:1px;text-align:center}
+.sign-link:hover{background:rgba(201,169,110,.08);border-color:rgba(201,169,110,.3);color:var(--gold-light)}
 .rashi-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
 .rashi-card{padding:22px;border-radius:24px;background:linear-gradient(145deg,rgba(11,14,44,.92),rgba(19,22,64,.5));border:1px solid var(--border);box-shadow:0 18px 46px rgba(0,0,0,.24)}
 .rashi-card-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:14px}
@@ -81,23 +89,39 @@ img{max-width:100%;display:block}
 .rashi-text{color:var(--text-soft);line-height:1.78;font-size:.97rem}
 .source-note{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:36px;padding-top:16px;border-top:1px solid rgba(201,169,110,.12);color:var(--text-muted);font-size:.86rem}
 .source-note a{font-weight:700}
+.cta-band{margin-top:26px;padding:24px;border-radius:26px;border:1px solid rgba(201,169,110,.14);background:linear-gradient(145deg,rgba(16,19,56,.92),rgba(12,14,37,.72));display:flex;justify-content:space-between;align-items:center;gap:18px}
+.cta-band h3{font-family:'Cinzel',serif;font-size:1.1rem;color:var(--gold-light);margin-bottom:8px}
+.cta-band p{color:var(--text-soft);line-height:1.75;max-width:680px}
+.page-footer{margin-top:34px;padding:26px 0 12px;border-top:1px solid rgba(201,169,110,.12)}
+.page-footer-grid{display:grid;grid-template-columns:1.3fr .8fr .9fr;gap:28px}
+.footer-title{font-family:'Cinzel',serif;font-size:.72rem;letter-spacing:2.8px;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+.footer-copy{color:var(--text-muted);line-height:1.8;font-size:.92rem}
+.footer-links{display:flex;flex-direction:column;gap:9px}
+.footer-links a{color:var(--text-muted);font-size:.92rem}
+.footer-links a:hover{color:var(--gold-light)}
 .empty-state,.error-state{padding:28px;border-radius:24px;background:rgba(201,169,110,.06);border:1px solid rgba(201,169,110,.12);color:var(--text-soft);line-height:1.7}
 .footer-note{margin-top:30px;text-align:center;color:rgba(226,212,190,.55);font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:2.2px;text-transform:uppercase}
 @media(max-width:1024px){
   .hero-panel{grid-template-columns:1fr}
+  .sign-nav{grid-template-columns:repeat(4,minmax(0,1fr))}
   .rashi-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .page-footer-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:768px){
   .nav-inner{flex-direction:column;align-items:flex-start}
   .nav-links{flex-wrap:wrap}
   .page-shell{padding-top:40px}
   .hero-panel{padding:24px}
+  .sign-nav{grid-template-columns:repeat(3,minmax(0,1fr))}
   .rashi-grid{grid-template-columns:1fr}
+  .cta-band{flex-direction:column;align-items:flex-start}
+  .page-footer-grid{grid-template-columns:1fr}
   .source-note{flex-direction:column;align-items:flex-start}
 }
 @media(max-width:480px){
   .container{width:min(100%,calc(100% - 24px))}
   .lang-btn{min-width:64px;padding:7px 11px;font-size:.64rem;letter-spacing:.8px}
+  .sign-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
   .btn{width:100%}
 }
 </style>
@@ -136,6 +160,7 @@ img{max-width:100%;display:block}
         <p data-en="Read the daily zodiac guidance in Nepali and English. The page is updated from Bishwaguru and keeps a small visible source reference." data-np="नेपाली र अङ्ग्रेजीमा दैनिक राशिफल हेर्नुहोस्। यो पृष्ठ विश्वगुरुबाट अद्यावधिक गरिन्छ र सानो स्रोत सन्दर्भ देखाइराख्छ।">नेपाली र अङ्ग्रेजीमा दैनिक राशिफल हेर्नुहोस्। यो पृष्ठ विश्वगुरुबाट अद्यावधिक गरिन्छ र सानो स्रोत सन्दर्भ देखाइराख्छ।</p>
         <div class="hero-meta">
           <div class="date-chip" id="dateChip">Loading date...</div>
+          <div class="translation-chip" id="updatedChip">Updating...</div>
           <div class="source-chip"><span id="sourceLabel">स्रोत:</span> <a id="sourceLink" href="https://www.bishwagurunepal.com/" target="_blank" rel="noopener">Bishwaguru Nepal</a></div>
         </div>
         <div class="hero-actions">
@@ -156,11 +181,43 @@ img{max-width:100%;display:block}
     </section>
 
     <div class="section-tag" data-en="Twelve Signs" data-np="बाह्र राशिहरू">Twelve Signs</div>
+    <nav class="sign-nav" id="signNav" aria-label="Rashifal sign shortcuts"></nav>
     <section id="rashifalGrid" class="rashi-grid"></section>
     <div class="source-note">
       <span id="sourceReferenceText">स्रोत: Bishwaguru Nepal</span>
       <a id="sourceReferenceLink" href="https://www.bishwagurunepal.com/" target="_blank" rel="noopener">bishwagurunepal.com</a>
     </div>
+    <section class="cta-band">
+      <div>
+        <h3 data-en="Need a personal reading too?" data-np="व्यक्तिगत पठन पनि चाहनुहुन्छ?">Need a personal reading too?</h3>
+        <p data-en="Use the daily rashifal for general guidance, then book a one-to-one session for your personal Kundali, Chhina, marriage guidance, or spiritual consultation." data-np="दैनिक राशिफललाई सामान्य मार्गदर्शनका रूपमा लिनुहोस्, अनि आफ्नो व्यक्तिगत कुण्डली, चिना, विवाह मार्गदर्शन वा आध्यात्मिक परामर्शका लागि एक-देखि-एक सत्र बुक गर्नुहोस्।">Use the daily rashifal for general guidance, then book a one-to-one session for your personal Kundali, Chhina, marriage guidance, or spiritual consultation.</p>
+      </div>
+      <a href="./index.html#booking" class="btn btn-primary"><span data-en="Book Personal Reading" data-np="व्यक्तिगत पठन बुक गर्नुहोस्">Book Personal Reading</span></a>
+    </section>
+    <footer class="page-footer">
+      <div class="page-footer-grid">
+        <div>
+          <div class="footer-title" data-en="Shiva Bhandari" data-np="शिव भण्डारी">Shiva Bhandari</div>
+          <div class="footer-copy" data-en="Authentic Vedic astrology, Nepali Chhina reading, marriage guidance, and spiritual consultation from Kathmandu." data-np="काठमाडौंबाट प्रामाणिक वैदिक ज्योतिष, चिना पठन, विवाह मार्गदर्शन तथा आध्यात्मिक परामर्श।">Authentic Vedic astrology, Nepali Chhina reading, marriage guidance, and spiritual consultation from Kathmandu.</div>
+        </div>
+        <div>
+          <div class="footer-title" data-en="Quick Links" data-np="द्रुत लिंक">Quick Links</div>
+          <div class="footer-links">
+            <a href="./index.html" data-en="Home" data-np="गृहपृष्ठ">Home</a>
+            <a href="./index.html#services" data-en="Services" data-np="सेवाहरू">Services</a>
+            <a href="./index.html#booking" data-en="Book Now" data-np="बुक गर्नुहोस्">Book Now</a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-title" data-en="Contact" data-np="सम्पर्क">Contact</div>
+          <div class="footer-links">
+            <a href="tel:+9779748817832">+977 974-8817832</a>
+            <a href="mailto:shivaastroyogadb369@gmail.com">shivaastroyogadb369@gmail.com</a>
+            <a href="./index.html#contact" data-en="Contact Page" data-np="सम्पर्क पृष्ठ">Contact Page</a>
+          </div>
+        </div>
+      </div>
+    </footer>
     <div class="footer-note" data-en="Daily rashifal page for Shiva Bhandari" data-np="शिव भण्डारीका लागि दैनिक राशिफल पृष्ठ">Daily rashifal page for Shiva Bhandari</div>
   </div>
 </main>
@@ -168,6 +225,20 @@ img{max-width:100%;display:block}
 <script>
 let lang = "np";
 let rashifalData = null;
+
+function formatUpdatedAt(value) {
+  if (!value) return "";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return date.toLocaleString(lang === "en" ? "en-GB" : "ne-NP", {
+    year: "numeric",
+    month: "short",
+    day: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    timeZone: "Asia/Kathmandu",
+  });
+}
 
 function setLang(nextLang) {
   lang = nextLang;
@@ -185,17 +256,25 @@ function renderRashifal() {
   const grid = document.getElementById("rashifalGrid");
   const pageTitle = document.getElementById("pageTitle");
   const dateChip = document.getElementById("dateChip");
+  const updatedChip = document.getElementById("updatedChip");
   const translationNote = document.getElementById("translationNote");
   const sourceLabel = document.getElementById("sourceLabel");
   const sourceReferenceText = document.getElementById("sourceReferenceText");
+  const sourceLink = document.getElementById("sourceLink");
+  const sourceReferenceLink = document.getElementById("sourceReferenceLink");
+  const signNav = document.getElementById("signNav");
 
   if (!rashifalData) {
     grid.innerHTML = '<div class="empty-state">Loading rashifal...</div>';
+    signNav.innerHTML = "";
     return;
   }
 
   pageTitle.textContent = lang === "en" ? rashifalData.title_en : rashifalData.title_np;
   dateChip.textContent = lang === "en" ? rashifalData.date_en : rashifalData.date_np;
+  updatedChip.textContent = lang === "en"
+    ? `Updated ${formatUpdatedAt(rashifalData.updated_at)}`
+    : `अद्यावधिक ${formatUpdatedAt(rashifalData.updated_at)}`;
   translationNote.textContent = lang === "en"
     ? rashifalData.source.translation_note_en
     : rashifalData.source.translation_note_np;
@@ -203,9 +282,15 @@ function renderRashifal() {
   sourceReferenceText.textContent = lang === "en"
     ? rashifalData.source.reference_en
     : rashifalData.source.reference_np;
+  sourceLink.href = rashifalData.source.url;
+  sourceReferenceLink.href = rashifalData.source.url;
+
+  signNav.innerHTML = rashifalData.signs.map((item) => `
+    <a class="sign-link" href="#sign-${item.slug}">${lang === "en" ? item.sign_en : item.sign_np}</a>
+  `).join("");
 
   grid.innerHTML = rashifalData.signs.map((item) => `
-    <article class="rashi-card">
+    <article class="rashi-card" id="sign-${item.slug}">
       <div class="rashi-card-head">
         <div>
           <div class="sign-name">${lang === "en" ? item.sign_en : item.sign_np}</div>

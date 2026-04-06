@@ -827,7 +827,6 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);background
           <div class="about-mobile-note-title" data-en="Shiva Bhandari" data-np="शिव भण्डारी">Shiva Bhandari</div>
           <div class="about-mobile-note-copy" data-en="Vedic astrologer, yoga teacher, and spiritual guide offering personal guidance from Kathmandu." data-np="काठमाडौंबाट व्यक्तिगत मार्गदर्शन प्रदान गर्ने वैदिक ज्योतिषी, योग शिक्षक र आध्यात्मिक मार्गदर्शक।">Vedic astrologer, yoga teacher, and spiritual guide offering personal guidance from Kathmandu.</div>
         </div>
-        <div class="about-badge"><span class="num">369</span></div>
         <div class="about-certificate-ribbon reveal">
           <img src="shiva-certificate.jpg" alt="Astro-Council Nepal certificate for Shiva Bhandari" loading="lazy" decoding="async"/>
           <div class="about-certificate-caption" data-en="Astro-Council Nepal Certificate" data-np="एस्ट्रो काउन्सिल नेपाल प्रमाणपत्र">Astro-Council Nepal Certificate</div>
@@ -979,7 +978,6 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);background
           <div class="bf-item"><span class="bf-icon">🪐</span><span class="bf-text" data-en="Planetary transit & Dasha assessment" data-np="ग्रह पारगमन र दशा मूल्यांकन">Planetary transit & Dasha assessment</span></div>
           <div class="bf-item"><span class="bf-icon">💬</span><span class="bf-text" data-en="Live Q&A (45–60 min)" data-np="लाइभ Q&A (४५–६० मिनेट)">Live Q&A (45–60 min)</span></div>
           <div class="bf-item"><span class="bf-icon">📩</span><span class="bf-text" data-en="Written summary via email" data-np="इमेलमार्फत सारांश">Written summary via email</span></div>
-          <div class="bf-item"><span class="bf-icon">📸</span><span class="bf-text" data-en="Face & palm reading from your photo" data-np="फोटोबाट अनुहार र हात पठन">Face & palm reading from photo</span></div>
         </div>
         <div class="booking-highlight-box" style="margin-top:14px">
           <h4 data-en="Also Available" data-np="पनि उपलब्ध">Also Available</h4>
@@ -994,20 +992,17 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);background
         <div class="step-form-wrap">
           <div class="step-header">
             <div class="step-header-title" data-en="Book a Session" data-np="सत्र बुक गर्नुहोस्">Book a Session</div>
-            <div class="step-header-sub" data-en="3 simple steps · Takes about 2 minutes." data-np="३ सरल चरणहरू · लगभग २ मिनेट।">3 simple steps · Takes about 2 minutes.</div>
+            <div class="step-header-sub" data-en="2 simple steps · Takes about 1 minute." data-np="२ सरल चरणहरू · लगभग १ मिनेट।">2 simple steps · Takes about 1 minute.</div>
           </div>
           <!-- Progress -->
           <div class="step-progress">
             <div class="step-dot active" id="dot1">1</div>
             <div class="step-line" id="line1"></div>
             <div class="step-dot" id="dot2">2</div>
-            <div class="step-line" id="line2"></div>
-            <div class="step-dot" id="dot3">3</div>
           </div>
           <div class="step-labels">
             <span class="step-label active" id="lbl1" data-en="Details" data-np="विवरण">Details</span>
-            <span class="step-label" id="lbl2" data-en="Photo" data-np="फोटो">Photo</span>
-            <span class="step-label" id="lbl3" data-en="Review" data-np="समीक्षा">Review</span>
+            <span class="step-label" id="lbl2" data-en="Review" data-np="समीक्षा">Review</span>
           </div>
           <!-- Panels -->
           <div class="step-panels">
@@ -1021,22 +1016,6 @@ footer{position:relative;z-index:1;border-top:1px solid var(--border);background
             </div>
             <!-- STEP 2 -->
             <div class="step-panel" id="step2">
-              <p style="font-size:.95rem;color:var(--text-muted);margin-bottom:18px;line-height:1.75;font-weight:300" data-en="Uploading your photo enables Shiva Ji to perform Samudrik Shastra (face reading) and palm line analysis for a richer, more personalised reading." data-np="तपाईंको फोटो अपलोड गर्नाले शिव जीलाई सामुद्रिक शास्त्र र हात रेखा विश्लेषण गर्न मद्दत गर्छ।">Uploading your photo enables Shiva Ji to perform Samudrik Shastra (face reading) and palm line analysis for a richer, more personalised reading.</p>
-              <div class="photo-upload-area" id="photoUploadArea">
-                <input type="file" id="b_photo" accept="image/*,.heic,.heif" onchange="handlePhoto(event)"/>
-                <span class="pua-icon">📸</span>
-                <div class="pua-text" data-en="Click or drag your photo here" data-np="यहाँ फोटो क्लिक वा ड्र्याग गर्नुहोस्">Click or drag your photo here</div>
-                <div class="pua-hint" data-en="Face or palm photo · JPG / PNG · max 5 MB · Optional" data-np="अनुहार वा हातको फोटो · JPG/PNG · अधिकतम 5MB · वैकल्पिक">Face or palm photo · JPG / PNG · max 5 MB · Optional</div>
-              </div>
-              <div class="photo-preview" id="photoPreview">
-                <img id="previewThumb" src="" alt="preview"/>
-                <span class="fn" id="photoFileName"></span>
-                <button type="button" class="photo-remove" onclick="removePhoto()">✕</button>
-              </div>
-              <p style="font-family:'Cinzel',serif;font-size:.65rem;letter-spacing:1.5px;color:var(--text-muted);margin-top:14px;opacity:.65" data-en="✦ Your photo is kept completely private and used solely for your reading." data-np="✦ तपाईंको फोटो पूर्णतः निजी राखिन्छ।">✦ Your photo is kept completely private and used solely for your reading.</p>
-            </div>
-            <!-- STEP 3 -->
-            <div class="step-panel" id="step3">
               <p style="font-size:.88rem;color:var(--text-muted);margin-bottom:16px;font-weight:300" data-en="Please review your details before submitting." data-np="पेश गर्नु अघि आफ्नो विवरण जाँच गर्नुहोस्।">Please review your details before submitting.</p>
               <div class="review-grid" id="reviewGrid"></div>
               <p style="font-family:'Cinzel',serif;font-size:.62rem;letter-spacing:1.5px;color:var(--text-muted);margin-top:8px;opacity:.6;text-align:center" data-en="By submitting you agree to be contacted by Shiva Ji via phone or WhatsApp." data-np="पेश गरेर तपाईं फोन वा WhatsApp मार्फत सम्पर्कमा सहमत हुनुहुन्छ।">By submitting you agree to be contacted by Shiva Ji via phone or WhatsApp.</p>
@@ -1408,13 +1387,15 @@ function renderZodiacSigns(){
 }
 
 /* ============================================================
-   3-STEP BOOKING FORM
+   2-STEP BOOKING FORM
 ============================================================ */
-let step=1,photoFile=null,photoDataUrl='';
-const MAX_BOOKING_PHOTO_SIZE=5*1024*1024;
+let step=1;
+let bookingSubmitInFlight=false;
+let lastBookingFingerprint='';
+let lastBookingSubmittedAt=0;
 
 function updateStepUI(){
-  for(let i=1;i<=3;i++){
+  for(let i=1;i<=2;i++){
     const dot=document.getElementById('dot'+i);
     const lbl=document.getElementById('lbl'+i);
     const panel=document.getElementById('step'+i);
@@ -1424,11 +1405,14 @@ function updateStepUI(){
     else dot.textContent=i;
     if(panel){panel.classList.remove('active');if(i===step)panel.classList.add('active')}
   }
-  for(let i=1;i<=2;i++){const l=document.getElementById('line'+i);if(l)l.classList.toggle('done',i<step)}
+  const progressLine=document.getElementById('line1');
+  if(progressLine)progressLine.classList.toggle('done',step>1);
   const back=document.getElementById('stepBack');
   const next=document.getElementById('stepNext');
   back.style.display=step>1?'inline-block':'none';
-  next.innerHTML='<span>'+(step===3?(lang==='en'?'Submit Booking ✦':'बुकिङ पेश गर्नुहोस् ✦'):(lang==='en'?'Continue →':'जारी →'))+'</span>';
+  back.disabled=bookingSubmitInFlight;
+  next.disabled=bookingSubmitInFlight;
+  next.innerHTML='<span>'+(step===2?(lang==='en'?'Submit Booking ✦':'बुकिङ पेश गर्नुहोस् ✦'):(lang==='en'?'Continue →':'जारी →'))+'</span>';
 }
 
 function validateStep(){
@@ -1449,15 +1433,16 @@ function shakeNext(){
 }
 
 function nextStep(){
-  if(step===3){submitBookingToSupabase();return}
+  if(bookingSubmitInFlight)return;
+  if(step===2){submitBookingToSupabase();return}
   if(!validateStep())return;
+  step=Math.min(2,step+1);
   if(step===2)buildReview();
-  step=Math.min(3,step+1);
-  if(step===3)buildReview();
   updateStepUI();
   document.querySelector('.step-form-wrap').scrollIntoView({behavior:'smooth',block:'start'});
 }
 function prevStep(){
+  if(bookingSubmitInFlight)return;
   step=Math.max(1,step-1);
   updateStepUI();
   document.querySelector('.step-form-wrap').scrollIntoView({behavior:'smooth',block:'start'});
@@ -1469,79 +1454,9 @@ function buildReview(){
     {l:lang==='en'?'Name':'नाम',v:document.getElementById('b_name').value||'—'},
     {l:lang==='en'?'Phone':'फोन',v:document.getElementById('b_phone').value||'—'},
     {l:lang==='en'?'Place of Birth':'जन्म स्थान',v:document.getElementById('b_pob').value||'—'},
-    {l:lang==='en'?'Photo':'फोटो',v:photoFile?'✓ Attached':'Not attached'},
   ];
   grid.innerHTML=rows.map(r=>`<div class="review-row"><span class="review-label">${r.l}</span><span class="review-value">${r.v}</span></div>`).join('');
-  if(photoDataUrl){
-    const pr=document.createElement('div');pr.className='review-row';
-    pr.innerHTML=`<span class="review-label">Preview</span><img class="review-photo" src="${photoDataUrl}"/>`;
-    grid.appendChild(pr);
-  }
 }
-
-function isHeicLike(file){
-  const type=(file.type||'').toLowerCase();
-  return type.includes('heic')||type.includes('heif')||/\.(heic|heif)$/i.test(file.name||'');
-}
-
-async function normalizeBookingPhoto(file){
-  if(!file)return null;
-  if(!isHeicLike(file))return file;
-  if(typeof heic2any!=='function')throw new Error('HEIC conversion is unavailable');
-  const converted=await heic2any({blob:file,toType:'image/jpeg',quality:.9});
-  const jpegBlob=Array.isArray(converted)?converted[0]:converted;
-  const safeName=(file.name||'booking-photo').replace(/\.(heic|heif)$/i,'');
-  return new File([jpegBlob],safeName+'.jpg',{type:'image/jpeg',lastModified:Date.now()});
-}
-
-function readPhotoPreview(file){
-  return new Promise((resolve,reject)=>{
-    const reader=new FileReader();
-    reader.onload=ev=>resolve(ev.target.result);
-    reader.onerror=()=>reject(new Error('Preview failed'));
-    reader.readAsDataURL(file);
-  });
-}
-
-async function handlePhoto(e){
-  const file=e.target.files[0];if(!file)return;
-  try{
-    const normalizedFile=await normalizeBookingPhoto(file);
-    if(normalizedFile.size>MAX_BOOKING_PHOTO_SIZE){
-      throw new Error('Please upload an image under 5 MB.');
-    }
-    photoFile=normalizedFile;
-    photoDataUrl=await readPhotoPreview(normalizedFile);
-    document.getElementById('previewThumb').src=photoDataUrl;
-    document.getElementById('photoFileName').textContent=normalizedFile.name+(isHeicLike(file)?' (converted for upload)':'');
-    document.getElementById('photoPreview').classList.add('visible');
-    document.querySelector('.pua-text').textContent='Photo selected ✓';
-  }catch(error){
-    console.warn('Photo preparation failed:',error.message);
-    removePhoto();
-    alert(error.message||'Could not process this photo. Please try another image.');
-  }
-}
-function removePhoto(){
-  photoFile=null;photoDataUrl='';
-  document.getElementById('b_photo').value='';
-  document.getElementById('photoPreview').classList.remove('visible');
-  document.querySelector('.pua-text').textContent=lang==='en'?'Click or drag your photo here':'यहाँ फोटो क्लिक वा ड्र्याग गर्नुहोस्';
-}
-
-/* Drag & drop */
-document.addEventListener('DOMContentLoaded',()=>{
-  const area=document.getElementById('photoUploadArea');
-  if(area){
-    area.addEventListener('dragover',e=>{e.preventDefault();area.classList.add('drag-over')});
-    area.addEventListener('dragleave',()=>area.classList.remove('drag-over'));
-    area.addEventListener('drop',e=>{
-      e.preventDefault();area.classList.remove('drag-over');
-      const f=e.dataTransfer.files[0];
-      if(f&&((f.type||'').startsWith('image/')||isHeicLike(f))){handlePhoto({target:{files:e.dataTransfer.files}})}
-    });
-  }
-});
 
 /* Legacy entry points now route directly to Supabase */
 async function submitBooking(){return submitBookingToSupabase()}
@@ -1614,7 +1529,6 @@ window.addEventListener('DOMContentLoaded',()=>{
 </script>
 
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="https://cdn.jsdelivr.net/npm/heic2any/dist/heic2any.min.js"></script>
 
 <script>
   // Supabase client for form submissions
@@ -1722,8 +1636,8 @@ window.addEventListener('DOMContentLoaded',()=>{
     ['b_name', 'b_phone', 'b_pob'].forEach((id) => {
       document.getElementById(id).value = '';
     });
-    removePhoto();
     step = 1;
+    bookingSubmitInFlight = false;
     updateStepUI();
   }
 
@@ -1777,7 +1691,10 @@ window.addEventListener('DOMContentLoaded',()=>{
   }
 
   async function submitBookingToSupabase() {
+    if (bookingSubmitInFlight) return;
     document.getElementById('submittingState').classList.add('active');
+    bookingSubmitInFlight = true;
+    updateStepUI();
 
     const name = document.getElementById('b_name').value.trim();
     const phone = document.getElementById('b_phone').value.trim();
@@ -1786,30 +1703,19 @@ window.addEventListener('DOMContentLoaded',()=>{
 
     if (!name || !phone || !pob) {
       document.getElementById('submittingState').classList.remove('active');
+      bookingSubmitInFlight = false;
+      updateStepUI();
       alert('Please complete the required booking fields first.');
       return;
     }
-
-    let final_photo_url = "";
-    let photoUploadFailed = false;
-    let photoUploadErrorMessage = '';
-
-    if (photoFile) {
-      const fileName = Date.now() + '-' + photoFile.name;
-      const { error: uploadError } = await supabaseClient.storage.from('photos').upload(fileName, photoFile, {
-        cacheControl: '3600',
-        upsert: false,
-        contentType: photoFile.type || 'image/jpeg'
-      });
-      
-      if (!uploadError) {
-        const { data } = supabaseClient.storage.from('photos').getPublicUrl(fileName);
-        final_photo_url = data.publicUrl;
-      } else {
-        photoUploadFailed = true;
-        photoUploadErrorMessage = uploadError.message || 'Unknown upload error';
-        console.warn('Photo upload failed:', uploadError.message);
-      }
+    const fingerprint = `${name.toLowerCase()}|${phone}|${pob.toLowerCase()}`;
+    const now = Date.now();
+    if (fingerprint === lastBookingFingerprint && now - lastBookingSubmittedAt < 15000) {
+      document.getElementById('submittingState').classList.remove('active');
+      bookingSubmitInFlight = false;
+      updateStepUI();
+      alert('This booking was just submitted. Please wait a moment before trying again.');
+      return;
     }
 
     const { error } = await supabaseClient.from(bookingsTable).insert([ 
@@ -1821,8 +1727,8 @@ window.addEventListener('DOMContentLoaded',()=>{
         pob: pob,
         preferred_date: null,
         notes: null,
-        photo_url: final_photo_url || null,
-        has_photo: Boolean(final_photo_url),
+        photo_url: null,
+        has_photo: false,
         source: visitor.source,
         device_type: visitor.deviceType,
         visitor_id: visitor.visitorId,
@@ -1834,16 +1740,17 @@ window.addEventListener('DOMContentLoaded',()=>{
     ]);
 
     document.getElementById('submittingState').classList.remove('active');
+    bookingSubmitInFlight = false;
+    updateStepUI();
 
     if (error) {
       alert("Oops! Could not save booking: " + error.message);
     } else {
+      lastBookingFingerprint = fingerprint;
+      lastBookingSubmittedAt = now;
       resetBookingForm();
       showTY('tyBooking');
       launchConfetti('confettiWrap');
-      if (photoUploadFailed) {
-        alert('Booking saved, but the photo upload failed: ' + photoUploadErrorMessage);
-      }
     }
   }
 </script>

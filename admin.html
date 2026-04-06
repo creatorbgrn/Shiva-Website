@@ -235,7 +235,7 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
 
 /* MOBILE */
 @media(max-width:900px){
-  .sidebar{width:min(86vw,320px);transform:translateX(-100%);box-shadow:0 24px 60px rgba(0,0,0,.45)}
+  .sidebar{width:min(90vw,340px);transform:translateX(-100%);box-shadow:0 24px 60px rgba(0,0,0,.45)}
   .sidebar.open{transform:translateX(0)}
   .sidebar-backdrop{display:block;position:fixed;inset:0;z-index:90;background:rgba(5,6,26,.68);backdrop-filter:blur(6px);opacity:0;pointer-events:none;transition:opacity .25s}
   .sidebar-backdrop.show{opacity:1;pointer-events:auto}
@@ -248,8 +248,14 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
   .overview-grid{grid-template-columns:1fr}
   .donut-wrap{grid-template-columns:1fr}
   .stats-intro{flex-direction:column;align-items:flex-start}
+  .stats-intro-copy{font-size:.88rem}
   .stats-filter-bar{align-items:stretch}
   .chart-grid{grid-template-columns:1fr}
+  .tab-bar{flex-wrap:nowrap;overflow-x:auto;padding-bottom:8px}
+  .tab-btn{white-space:nowrap;flex:0 0 auto}
+  .line-chart-wrap{overflow-x:auto;padding-bottom:4px}
+  .line-chart-svg,.line-labels{min-width:560px}
+  .record-meta{white-space:normal}
   .record-header{align-items:flex-start;flex-wrap:wrap}
   .record-right{width:100%;justify-content:space-between}
   .line-labels{gap:4px}
@@ -257,6 +263,10 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
 @media(max-width:480px){
   .stats-grid{grid-template-columns:1fr}
   .login-card{padding:34px 24px}
+  .sidebar{width:100%;max-width:none}
+  .sidebar-header{padding:18px 16px 14px}
+  .sidebar-nav{padding:14px 10px}
+  .nav-item{font-size:.68rem;letter-spacing:1.2px}
   .record-details{grid-template-columns:1fr}
   .toolbar-group{width:100%}
   .toolbar,.search-box{width:100%}
@@ -266,7 +276,7 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
   .topbar-left,.topbar-right{width:100%;justify-content:space-between}
   .topbar-title{font-size:.74rem;letter-spacing:1.3px}
   .topbar-right{gap:8px}
-  .topbar-user{max-width:110px;font-size:.62rem;letter-spacing:1px}
+  .topbar-user{display:none}
   .topbar-avatar{width:30px;height:30px;font-size:.74rem}
   .stats-filter-group,.date-input{width:100%}
   .content{padding:14px}
@@ -274,6 +284,7 @@ html,body{height:100%;font-family:'Cormorant Garamond',Georgia,serif;background:
   .record-header,.record-body{padding-left:14px;padding-right:14px}
   .modal-actions{flex-direction:column}
   .modal-cancel,.modal-confirm{width:100%}
+  .toast{left:14px;right:14px;bottom:14px;max-width:none}
 }
 
 /* MODAL (status change confirm) */
